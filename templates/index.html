@@ -1,0 +1,58 @@
+{% extends "form.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-sm-2">
+            <img class="self-image" src="https://edu.tatar.ru/upload/anketas/227693.jpg" alt="">
+        </div>
+        <div class="col-sm-7">
+            <div class="desc-container switch-container" switch-name="greeting">
+                <h3 class="text-center">Добро пожаловать!</h3>
+                <div class="desc-separator"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quos esse, quisquam eligendi ut voluptatum perferendis expedita sunt id deleniti et ducimus? Necessitatibus, iure ducimus!</p>
+                <p>Soluta est harum architecto quasi nobis, ad quia molestias inventore odio recusandae, ratione tenetur numquam sunt aliquam sit quaerat sint! Deleniti tenetur hic ex ab!</p>
+                <p>Ipsum doloremque amet dolore recusandae ratione dolorem, labore, ad soluta placeat vero obcaecati sequi quidem, veritatis beatae officiis hic. Veritatis officiis nostrum ut repellendus consequuntur?</p>
+            </div>
+            <div class="desc-container switch-container" switch-name="self">
+                <h3 class="">О себе</h3>
+                <div class="desc-separator"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id omnis esse voluptate provident aspernatur hic placeat quibusdam reiciendis ipsa.</p>
+                <p>Perspiciatis vel voluptas fugiat earum sed distinctio nostrum porro at commodi ex dicta ipsum, voluptate dolore. Repellat, recusandae. Rerum, debitis?</p>
+                <p>Nisi eligendi nemo laborum? Soluta consequatur suscipit reiciendis eius perspiciatis vel, distinctio repellendus recusandae officia deserunt tempore sint aut illo.</p>
+            </div>
+            <div class="desc-container switch-container" switch-name="training">
+                <h3>Сведения о повышении квалификации</h3>
+                <div class="desc-separator"></div>
+            </div>
+            <div class="desc-container switch-container" switch-name="rewards">
+                <h3>Награды</h3>
+                <div class="desc-separator"></div>
+            </div>
+
+
+            
+        </div>
+        <div class="col-sm-3">
+            <div class="right-nav">
+                <div class="right-nav-item" switcher-name="greeting"><span>Приветствие</span></div>
+                <div class="right-nav-item" switcher-name="self"><span>О себе</span></div>
+                <div class="right-nav-item" switcher-name="rewards"><span>Награды</span></div>
+                <div class="right-nav-item" switcher-name="training"><span>Повышение квалификации</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/switcher.js') }}"></script>
+{% endblock %}

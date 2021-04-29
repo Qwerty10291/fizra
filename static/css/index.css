@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: #E5E5E5;
+}
+.content{
+    margin-top: 25px;
+}
+.desc-container{
+    margin-top: 25px;
+}
+.desc {
+    font-size: 1.25rem;
+}
+.self-image{
+    margin-top: 60px;
+}
