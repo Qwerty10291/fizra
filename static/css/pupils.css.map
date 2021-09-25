@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,IAAI;CAIf;;AATD,AAMI,gBANY,CAMZ,KAAK,CAAA;EACD,SAAS,EAAE,GAAG;CACjB",
+    "sources": [
+        "pupils.scss"
+    ],
+    "names": [],
+    "file": "pupils.css"
+}

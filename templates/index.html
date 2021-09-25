@@ -18,28 +18,48 @@
             <div class="desc-container switch-container" switch-name="greeting">
                 <h3 class="text-center">Добро пожаловать!</h3>
                 <div class="desc-separator"></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quos esse, quisquam eligendi ut voluptatum perferendis expedita sunt id deleniti et ducimus? Necessitatibus, iure ducimus!</p>
-                <p>Soluta est harum architecto quasi nobis, ad quia molestias inventore odio recusandae, ratione tenetur numquam sunt aliquam sit quaerat sint! Deleniti tenetur hic ex ab!</p>
-                <p>Ipsum doloremque amet dolore recusandae ratione dolorem, labore, ad soluta placeat vero obcaecati sequi quidem, veritatis beatae officiis hic. Veritatis officiis nostrum ut repellendus consequuntur?</p>
+                <p>Я, Романова Ольга Анатольевна, учитель физической культуры гимназии 102, рада приветствовать вас у себя на сайте</p>
+                <p>Здесь вы можете найти полезную информацию для учеников, ознакомиться с нормами ГТО и многое другое</p>
             </div>
             <div class="desc-container switch-container" switch-name="self">
                 <h3 class="">О себе</h3>
                 <div class="desc-separator"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id omnis esse voluptate provident aspernatur hic placeat quibusdam reiciendis ipsa.</p>
-                <p>Perspiciatis vel voluptas fugiat earum sed distinctio nostrum porro at commodi ex dicta ipsum, voluptate dolore. Repellat, recusandae. Rerum, debitis?</p>
-                <p>Nisi eligendi nemo laborum? Soluta consequatur suscipit reiciendis eius perspiciatis vel, distinctio repellendus recusandae officia deserunt tempore sint aut illo.</p>
+                <p>Меня зовут Ольга Анатольевна Романова. Я работаю учителем физической культуры в гимназии №102</p>
+                <p>Работаю учителем в этой школе уже более 9 лет. Общий стаж составляет 25 лет</p>
             </div>
             <div class="desc-container switch-container" switch-name="training">
                 <h3>Сведения о повышении квалификации</h3>
                 <div class="desc-separator"></div>
+                <p>Курсы повышения квалификации с 30.11.2015 по 18.12.2015 года по программе дополнительного профессионального образования «Современный урок ОБЖ с учетом требований ФГОС.
+                    Проектирование индивидуальной образовательной деятельности на уроках физической культуры», в объёме 108 часов.</p>
+                <p>
+                    Курсы повышения квалификации по программе «Оценка выполнения испытаний (тестов) ВФСК
+                    ГТО на соответствие знакам отличия судьями Центров тестирования по выполнению испытаний
+                    (тестов) ВФСК ГТО» в объёме 72 часов. Номер У79-68пк 18.10.2017 Удостоверение Поволжской
+                    государственной академии физической культуры спорта и туризма
+                    номер У79-68ПК 18.10.2016 года
+                </p>
+                <p>Курсы повышения квалификации с 21.01.2019 по 08.02.2019 года по программе
+                    «Совершенствование методической компетентности в преподавании в условиях реализации ФГОС
+                    (в предметной области «Физическая культура и основы безопасности жизнедеятельности)» ГАОУ
+                    ДПО «Институт развития образования Республики Татарстан», в объёме 96 часов. 
+                    ИРО -000194-БО номер 001338
+                </p>
+                <p>
+                    11.01.2021 г регистрация Мастер -класс Л.В. Кравченко, наставника школьных проектов -учителя физики МБОУ «Гуманитарно-юридический лицей №86 г Ижевска по теме Индивидуальный проект в старшей школе» негосударственное образовательное учреждение дополнительного профессионального образования «Центр социального -гуманитарного образования» в объёме 18 часов. номера 8829
+                </p>
             </div>
             <div class="desc-container switch-container" switch-name="rewards">
                 <h3>Награды</h3>
                 <div class="desc-separator"></div>
+                <div class="diploma-container">
+                    {% for diplom  in diploms %}
+                    <div class="diploma">
+                        <img src="/static/images/{{ diplom }}" alt="">
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-
-
-            
         </div>
         <div class="col-sm-3">
             <div class="right-nav">

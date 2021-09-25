@@ -37,7 +37,6 @@ function prepaire_elements() {
 }
 
 
-
 setInterval(function () {
     anchor1 = location.hash.substring(1)
     if (anchor != anchor1){

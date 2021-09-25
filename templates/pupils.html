@@ -1,0 +1,54 @@
+{% extends "form.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block title %}
+ученикам
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-sm-2">
+            <img class="self-image" src="https://edu.tatar.ru/upload/anketas/227693.jpg" alt="">
+        </div>
+        <div class="col-sm-7">
+            <div class="desc-container switch-container" switch-name="books">
+            </div>
+            <div class="desc-container switch-container" switch-name="gto">
+                <h3 class="text-center">Что нужно для участия в сдаче норм ГТО?</h3>
+                <ol>
+                    <li>Регистрация на сайте ГТО: <a href="https://user.gto.ru/user/register"></a></li>
+                    <li>Изучение нормативов: <a href="https://user.gto.ru/norms"></a></li>
+                    <li>Подготовиться к тестам</li>
+                    <li>Пройти медицинский осмотр и получить справку о допуске к сдаче норм ГТО</li>
+                    
+                </ol>
+            </div>
+            <div class="desc-container switch-container" switch-name="liberated">
+                <h3 class="text-center">Что такое освобождение от физкультуры</h3>
+                <p>После перенесенного заболевания ученик получает справку из медицинского учреждения, которая дает основание на две недели или на месяц освободить его от физических нагрузок.</p>
+                <p>Однако такая справка не освобождает от освоения данного учебного предмета, так как это обязательный учебный предмет,  поэтому каждый обучающийся школьник должен освоить дисциплину «Физическая культура» и получить оценку в аттестат об окончании основной или общей школы. 
+                Следовательно, ученик должен присутствовать во время урока, но выполнять задания, не включающие физическую нагрузку.</p>
+                <h3 class="text-center">Чем должен заниматься на уроке освобожденный ученик?</h3>
+                <p>Освобожденный после болезни ученик не просто должен присутствовать на уроке, а получать оценки. Он может подготовить устное или письменное сообщение, рассказать учителю о правилах поведения на уроке, о технике безопасности при выполнении различных упражнений и т.д.</p>
+                <h3 class="text-center">Требования к выполнению реферата по физической культуре</h3>
+                <strong>Цель реферата:</strong>Провести углубленное изучение проблемы, гипотезы или выбранного вида спорта
+                <ol>
+                    <li>Правильно сформулировать тему реферата (согласно с учителем)  </li>
+                    <li>Составить план реферата, который должен как можно полнее раскрыть тему теоретической или исследовательской работы</li>
+                </ol>
+           </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="right-nav">
+            <div class="right-nav-item" switcher-name="books"><span>Учебники</span></div>
+            <div class="right-nav-item" switcher-name="gto"><span>ГТО</span></div>
+            <div class="right-nav-item" switcher-name="liberated"><span>Для освобожденных учащихся</span></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

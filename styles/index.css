@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.content {
+  margin-top: 25px;
+}
+
+.desc-container {
+  margin-top: 25px;
+}
+
+.desc {
+  font-size: 1.25rem;
+}
+
+.self-image {
+  margin-top: 60px;
+}
+
+.diploma-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.diploma-container .diploma img {
+  width: 30%;
+  height: 50%;
+}
+/*# sourceMappingURL=index.css.map */

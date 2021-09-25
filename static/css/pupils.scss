@@ -1,0 +1,10 @@
+.books-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: auto;
+    .book{
+        max-width: 30%;
+    }
+}
