@@ -1,0 +1,36 @@
+{% extends "form.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block title %}
+Методические пособия
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-sm-2">
+            <img class="self-image" src="https://edu.tatar.ru/upload/anketas/227693.jpg" alt="">
+        </div>
+        <div class="col-sm-7">
+            <div class="desc-container switch-container" switch-name="works">
+                <h3 class="text-center">Рабочие программы</h3>
+                <div class="desc-separator"></div>
+                <a href="/static/files/программа_5-9_2022.doc">Рабочие программы 5-9 классов</a>
+                <a href="/static/files/программа_10-11_22г.doc">Рабочие программы 10-11 классов</a>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="right-nav">
+                <div class="right-nav-item" switcher-name="works"><span>Рабочие программы</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/switcher.js') }}"></script>
+{% endblock %}

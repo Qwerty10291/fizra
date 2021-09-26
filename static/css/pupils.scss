@@ -1,10 +1,15 @@
 .books-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 50%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 5%;
+    grid-row-gap: 15px;
     .book{
-        max-width: 30%;
+        a{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
 }
